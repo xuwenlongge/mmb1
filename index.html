@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>慢慢买比价网-手机版</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+    <link rel="shortcut icon" href="path/to/favicon-ico"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="CSS/样式初始化文件.css"/>
+    <link rel="stylesheet" href="CSS/index.css"/>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/template.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <!--首页顶部-->
+    <div class="header " id="top">
+        <!--首页顶部左边logo部分-->
+        <div class="logo fl">
+            <a href="#" title="慢慢买比价网--手机版">
+                <img src="images/header_logo.png" alt="慢慢买比价网--手机版"/>
+            </a>
+        </div>
+        <!--首页顶部右边下载部分-->
+        <div class="download fr">
+            <a href="#" title="">
+                <img src="images/header_app.png" alt=""/>
+            </a>
+        </div>
+    </div>
+    <!--首页搜索栏-->
+    <form class="srch">
+        <div class="search">
+            <!--搜索框部分-->
+            <input class="sertxt" type="text" placeholder="请输入你想比价的商品"/>
+            <!--搜索按钮部分-->
+            <input type="submit" value="搜索"  class="serbtn"/>
+        </div>
+    </form>
+    <!--首页分类模块-->
+    <div class="container-fluid assort" id="list_ul">
+        <div class="row  ">
+            <div class="col-xs-3">
+                <a href="#">
+                    <div class="pri">
+                        <img src="images/ic_search.png" alt="比价搜索"/>
+                    </div>
+                    <div class="name">比价搜索</div>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#">
+                    <div class="pri">
+                        <img src="images/ic_cu.png" alt="省钱控"/>
+                    </div>
+                    <div class="name">省钱控</div>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#">
+                    <div class="pri">
+                        <img src="images/ic_coudanpin.png" alt="国内折扣"/>
+                    </div>
+                    <div class="name">国内折扣</div>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#">
+                    <div class="pri">
+                        <img src="images/ic_bcj.png" alt="白菜价"/>
+                    </div>
+                    <div class="name">白菜价</div>
+                </a>
+            </div>
+
+        </div>
+        <div class="row  ">
+            <div class="col-xs-3">
+                <a href="#">
+                    <div class="pri">
+                        <img src="images/haitao.png" alt="海淘折扣"/>
+                    </div>
+                    <div class="name">海淘折扣</div>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#">
+                    <div class="pri">
+                        <img src="images/ic_search.png" alt="比价搜索"/>
+                    </div>
+                    <div class="name">比价搜索</div>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#">
+                    <div class="pri">
+                        <img src="images/ic_search.png" alt="比价搜索"/>
+                    </div>
+                    <div class="name">比价搜索</div>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#" id="mor" >
+                    <div class="pri">
+                        <img src="images/gengduo.png" alt="更多" />
+                    </div>
+                    <div class="name">更多</div>
+                </a>
+            </div>
+        </div>
+        <div  id="thirdrow" class="row " >
+            <div class="col-xs-3">
+                <a href="#">
+                    <div class="pri">
+                        <img src="images/ic_search.png" alt="比价搜索"/>
+                    </div>
+                    <div class="name">比价搜索</div>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#">
+                    <div class="pri">
+                        <img src="images/ic_search.png" alt="比价搜索"/>
+                    </div>
+                    <div class="name">比价搜索</div>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#">
+                    <div class="pri">
+                        <img src="images/ic_search.png" alt="比价搜索"/>
+                    </div>
+                    <div class="name">比价搜索</div>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#">
+                    <div class="pri">
+                        <img src="images/ic_search.png" alt="比价搜索"/>
+                    </div>
+                    <div class="name">比价搜索</div>
+                </a>
+            </div>
+        </div>
+
+        <!--与栅格冲突-->
+        <!--<script type="text/html" id="kind_list">-->
+            <!--{{each result as value i}}-->
+            <!--<a href='{{value.titlrhref}}'>-->
+                <!--<div class="pri">-->
+                    <!--{{#value.img}}-->
+                <!--</div>-->
+                <!--<div class="name">{{value.name}}</div>-->
+            <!--</a>-->
+            <!--{{/each}}-->
+        <!--</script>-->
+    </div>
+    <!--首页折扣推荐部分-->
+    <div class="discount">
+        <a href="#">
+            <span class="fl">超值折扣推荐</span>
+            <img class="fr" src="images/more.png" alt=""/>
+        </a>
+    </div>
+    <!--首页商品描述部分-->
+    <div class="desc ">
+        <!--商品列表部分-->
+            <div class="cu_list">
+                <ul  id="product-ul">
+                    <!--动画效果-->
+
+                    <div class="spinner">
+                        <div class="dot1"></div>
+                        <div class="dot2"></div>
+                    </div>
+                    <!--................-->
+                    <script type="text/html" id="product-list">
+                        {{each result as value i}}
+                        <li class="clearfix">
+                            <a href="">
+                                <div class="pic fl">
+                                    {{#value.productImgSm}}
+                                </div>
+                                <div class="info ">
+                                    <div class="title">
+                                        <span>{{value.productName}}</span>
+                                        <span>{{value.productTips}}</span>
+                                    </div>
+                                    <div class="footer">
+                                        <span>{{value.productFrom}} | {{value.productTime}}</span>
+                                        <a href="">
+                                            <span class="glyphicon glyphicon-comment fr icon_com"><i>{{((/\d+/).exec(value.productComCount))[0]}}</i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        {{/each}}
+                    </script>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <!--商品列表更多部分-->
+            <div class="mor_bar">
+                <a href="#">更多优惠信息 »</a>
+            </div>
+        <!--商品列表排行logo部分-->
+        <div class="order">
+            <a href="#">
+                <span class="fl">品牌排行</span>
+                <img class="fr" src="images/more.png" alt=""/>
+            </a>
+        </div>
+    </div>
+    <!--首页底部部分-->
+    <div class="footbo">
+            <div class="top">
+                <a href="#" class="fl">登录</a>
+                <a href="#" class="fl">注册</a>
+                <a href="#top" target="_self" class="fl "  style="width:40%;border:0;">
+                    <img src="images/top.jpg" alt=""/>
+                    返回顶部
+                </a>
+            </div>
+            <div class="bottom">
+                <p>
+                    <a href="#" style="color:red;">手机APP下载</a>
+                    <a href="">慢慢买手机版</a>
+                    -- 掌上比价平台
+                </p>
+                <p>
+                    m.manmanbuy.com
+                </p>
+            </div>
+    </div>
+</body>
+
+</html>
