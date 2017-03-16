@@ -21,7 +21,7 @@ ul, ol {
 input {
     padding-top: 0;
     padding-bottom: 0;
-    font-family: "SimSun", "宋体";
+    font-family: "微软雅黑", "宋体";
 }
 
 select, input, textarea {
@@ -88,10 +88,6 @@ s, i, em {
     text-decoration: none;
 }
 
-/*京东色*/
-.col-red {
-    color: #C81623 !important;
-}
 
 /*公共类*/
 .w {

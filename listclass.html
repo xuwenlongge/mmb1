@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>慢慢买比价网-手机版</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+    <link rel="shortcut icon" href="path/to/favicon-ico"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="CSS/样式初始化文件.css"/>
+    <link rel="stylesheet" href="CSS/listclass.css"/>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/template.js"></script>
+    <script src="js/listclass.js"></script>
+</head>
+<body style="padding-bottom:50px;background: #efefef">
+    <!--首页顶部-->
+    <div class="header " id="top">
+    <!--首页顶部左边logo部分-->
+    <div class="logo fl">
+        <a href="#" title="慢慢买比价网--手机版">
+            <img src="images/header_logo.png" alt="慢慢买比价网--手机版"/>
+        </a>
+    </div>
+    <!--首页顶部右边下载部分-->
+    <div class="download fr">
+        <a href="#" title="">
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+</div>
+    <!--首页搜索栏-->
+    <form class="srch">
+    <div class="search">
+        <!--搜索框部分-->
+        <input class="sertxt" type="text" placeholder="请输入你想比价的商品"/>
+        <!--搜索按钮部分-->
+        <input type="submit" value="搜索"  class="serbtn"/>
+    </div>
+</form>
+    <!--商品分类-->
+   <div class="brief" >
+       <div class="brief-in" >
+           <script type="text/html"   id="brief-item">
+               {{each result as value i}}
+               <div class="brief-item">
+                   <a class="arrow" titleid={{value.titleId}}>{{value.title}}</a>
+                   <ul class="clearfix hide" id="ul">
+                       {{include 'li' value}}
+                   </ul>
+               </div>
+               {{/each}}
+           </script>
+           <script type="text/html" id="li">
+               {{each result as value i}}
+               <li>
+                    <a href="" categoryid={{value.categoryId}}>{{value.category}}</a>
+               </li>
+               {{/each}}
+           </script>
+
+    <!--商品具体list-->
+
+       </div>
+   </div>
+
+    <!--首页底部部分-->
+    <div class="footbo">
+    <div class="top">
+        <a href="#" class="fl">登录</a>
+        <a href="#" class="fl">注册</a>
+        <a href="#top" target="_self" class="fl "  style="width:40%;border:0;">
+            <img src="images/top.jpg" alt=""/>
+            返回顶部
+        </a>
+    </div>
+    <div class="bottom">
+        <p>
+            <a href="#" style="color:red;">手机APP下载</a>
+            <a href="">慢慢买手机版</a>
+            -- 掌上比价平台
+        </p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+
+    <!--底部app打开-->
+    <div class="app_open">
+        <a class="closefix"></a>
+        <div class="icon"></div>
+        <p class="titlefix">慢慢买--全网比价</p>
+        <p class="describle">每一次购物都在省钱！</p>
+        <a href="#" class="app_btn">立即打开</a>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
